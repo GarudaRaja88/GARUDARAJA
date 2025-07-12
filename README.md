@@ -1,1 +1,426 @@
-# GARUDARAJA
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Profesional</title>
+    <style>
+        /* Reset & Basic Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;A
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+        }
+        
+        /* Header Image */
+        .header-container {
+            width: 100%;
+            max-height: 588px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Action Buttons */
+        .action-buttons {
+            text-align: center;
+            padding: 20px 0;
+            background: #f8f8f8;
+        }
+        
+        .btn {
+            border: none;
+            padding: 12px 30px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .login-btn {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        
+        .login-btn:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .register-btn {
+            background-color: #333;
+            color: white;
+        }
+        
+        .register-btn:hover {
+            background-color: #555;
+        }
+        
+        /* Article Section */
+        .article-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .article-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #222;
+        }
+        
+        .article-content {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .article-content p {
+            margin-bottom: 20px;
+        }
+        
+        /* Live Chat Button */
+        .live-chat-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        
+        .live-chat-btn:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+        
+        /* Chat Popup */
+        .chat-popup {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 90%;
+            max-width: 350px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            overflow: hidden;
+        }
+        
+        .chat-header {
+            background-color: #333;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .chat-body {
+            padding: 15px;
+        }
+        
+        .chat-message {
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        
+        .chat-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .chat-send-btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            font-size: 14px;
+        }
+        
+        .chat-send-btn:hover {
+            background-color: #555;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .header-container {
+                max-height: 300px;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+                margin: 0 5px;
+            }
+            
+            .article-title {
+                font-size: 24px;
+            }
+            
+            .article-content {
+                font-size: 15px;
+            }
+            
+            .live-chat-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .chat-popup {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header-container {
+                max-height: 200px;
+            }
+            
+            .action-buttons {
+                padding: 15px 0;
+            }
+            
+            .btn {
+                padding: 8px 15px;
+                font-size: 13px;
+                margin: 0 3px;
+            }
+            
+            .article-section {
+                padding: 30px 15px;
+            }
+            
+            .article-title {
+                font-size: 22px;
+            }
+            
+            .live-chat-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Image - Ganti URL gambar di src -->
+    <div class="header-container">
+        <img src="https://garudaraja.dataklmsad903.site/images/banner-desktop/12/8bWo6E6mCFsDm6Sd.jpg" class="header-image">
+    </div>
+    
+    <!-- Action Buttons - Ganti URL di href -->
+    <div class="action-buttons">
+        <a href="https://garudaraja.org/masuk" class="btn login-btn">LOGIN</a>
+        <a href="https://garudaraja.org/daftar" class="btn register-btn">DAFTAR</a>
+    </div>
+    
+    <!-- Article Section -->
+    <div class="article-section">
+        <h1 class="article-title">GARUDARAJA Saba Sport: Platform Taruhan Olahraga Online Terkemuka</h1>
+        <div class="article-content">
+
+
+
+           <p><strong>Saba Sport</strong> (atau <strong>SABA Sports</strong>) adalah salah satu platform taruhan olahraga online terbesar di Asia, yang menawarkan berbagai pasar taruhan untuk pertandingan sepak bola, basket, tenis, eSports, dan cabang olahraga lainnya.</p>
+
+    <p>Platform ini dikenal karena menyediakan odds kompetitif, fitur live betting yang lengkap, dan antarmuka yang mudah digunakan. Saba Sport beroperasi di bawah lisensi internasional dan menjadi pilihan utama bagi banyak petaruh olahraga, terutama di wilayah Asia Tenggara.</p>
+
+    <h2>Sejarah dan Perkembangan Saba Sport</h2>
+
+    <p>Saba Sport merupakan bagian dari <strong>SABA Group</strong>, sebuah perusahaan yang telah lama berkecimpung dalam industri perjudian online.</p>
+
+    <p>Awalnya berfokus pada pasar Asia, Saba Sport kini telah berkembang ke berbagai negara dengan menyediakan layanan dalam beberapa bahasa, termasuk Bahasa Indonesia.</p>
+
+    <p>Platform ini dikenal karena keandalannya dalam menyediakan update pertandingan secara real-time dan berbagai pilihan taruhan yang menarik.</p>
+
+    <h2>Fitur Utama Saba Sport</h2>
+
+    <p><strong>1. Taruhan Olahraga Lengkap</strong><br>
+    Saba Sport mencakup berbagai cabang olahraga, termasuk:</p>
+
+    <ul>
+        <li><strong>Sepak Bola</strong> (Liga Champions, Premier League, La Liga, dll.)</li>
+        <li><strong>Basket</strong> (NBA, EuroLeague, Liga Indonesia)</li>
+        <li><strong>Tenis</strong> (Grand Slam, ATP, WTA)</li>
+        <li><strong>eSports</strong> (Dota 2, League of Legends, CS:GO)</li>
+        <li><strong>Olahraga Virtual</strong> (Sepak Bola Virtual, Balap Virtual)</li>
+    </ul>
+
+    <p><strong>2. Live Betting (Taruhan Langsung)</strong><br>
+    Pengguna dapat memasang taruhan saat pertandingan berlangsung dengan odds yang terus diperbarui secara real-time.</p>
+
+    <p>Fitur ini dilengkapi dengan statistik pertandingan dan siaran langsung (live streaming) untuk beberapa event.</p>
+
+    <p><strong>3. Beragam Jenis Taruhan</strong></p>
+
+    <ul>
+        <li><strong>Taruhan Handicap (Voor)</strong></li>
+        <li><strong>Taruhan Over/Under (Total Gol)</strong></li>
+        <li><strong>Taruhan Mix Parlay (Kombinasi)</strong></li>
+        <li><strong>Correct Score (Prediksi Skor Akhir)</strong></li>
+        <li><strong>Taruhan Ganjil/Genap</strong></li>
+    </ul>
+
+    <p><strong>4. Aplikasi Mobile & Akses Website</strong><br>
+    Saba Sport dapat diakses melalui <strong>website resmi</strong> atau <strong>aplikasi mobile</strong> (iOS & Android) untuk memudahkan taruhan di mana saja.</p>
+
+    <p><strong>5. Promosi dan Bonus</strong></p>
+
+    <ul>
+        <li><strong>Bonus Deposit untuk Member Baru</strong></li>
+        <li><strong>Cashback Kekalahan</strong></li>
+        <li><strong>Bonus Parlay</strong></li>
+        <li><strong>Event Spesial</strong> (Contoh: Taruhan Gratis untuk Pertandingan Besar)</li>
+    </ul>
+
+    <h2>Cara Menggunakan Saba Sport</h2>
+
+    <p><strong>1. Daftar Akun</strong></p>
+
+    <ul>
+        <li>Kunjungi situs resmi atau unduh aplikasi.</li>
+        <li>Isi formulir pendaftaran dengan data valid.</li>
+        <li>Verifikasi akun (jika diperlukan).</li>
+    </ul>
+
+    <p><strong>2. Deposit</strong></p>
+
+    <ul>
+        <li>Pilih metode pembayaran (Transfer Bank, E-Wallet, atau Cryptocurrency).</li>
+        <li>Lakukan pengisian saldo sesuai nominal yang diinginkan.</li>
+    </ul>
+
+    <p><strong>3. Memasang Taruhan</strong></p>
+
+    <ul>
+        <li>Pilih olahraga dan pertandingan.</li>
+        <li>Tentukan jenis taruhan dan nominal.</li>
+        <li>Konfirmasi taruhan.</li>
+    </ul>
+
+    <p><strong>4. Withdraw (Penarikan Dana)</strong></p>
+
+    <ul>
+        <li>Ajukan penarikan melalui menu withdraw.</li>
+        <li>Proses biasanya memakan waktu 5-30 menit tergantung metode.</li>
+    </ul>
+
+    <h2>Keunggulan Saba Sport Dibanding Platform Lain</h2>
+
+    <div class="highlight">
+        <p>✅ <strong>Odds yang Lebih Tinggi</strong> – Beberapa pasar taruhan menawarkan odds lebih baik daripada kompetitor.</p>
+        <p>✅ <strong>Tampilan User-Friendly</strong> – Antarmuka sederhana dan mudah dipahami.</p>
+        <p>✅ <strong>Live Streaming</strong> – Tersedia untuk beberapa pertandingan besar.</p>
+        <p>✅ <strong>Transaksi Cepat</strong> – Deposit dan withdraw diproses dalam waktu singkat.</p>
+        <p>✅ <strong>Layanan Pelanggan 24/7</strong> – Support via live chat, WhatsApp, atau telepon.</p>
+    </div>
+
+    <h2>Legalitas dan Keamanan</h2>
+
+    <p><strong>Saba Sport beroperasi di bawah lisensi internasional</strong> (misalnya dari PAGCOR Filipina atau First Cagayan).</p>
+
+    <p><strong>Tidak memiliki izin resmi di Indonesia</strong> – Kominfo memblokir situs judi online, termasuk Saba Sport.</p>
+
+    <p><strong>Risiko Hukum</strong> – Pengguna di Indonesia dapat terkena sanksi sesuai UU ITE dan UU Perjudian.</p>
+
+    <h2>Alternatif Legal di Indonesia</h2>
+
+    <p>Jika ingin bertaruh secara legal, beberapa opsi yang tersedia:</p>
+
+    <ul>
+        <li><strong>Taruhan melalui bandar darat resmi</strong> (hanya di wilayah tertentu seperti Batam).</li>
+        <li><strong>Situs berlisensi lokal</strong> (misalnya yang bekerja sama dengan pemerintah).</li>
+        <li><strong>Platform olahraga fantasy sports</strong> (seperti Dream11 atau DrafKings yang berbasis skill).</li>
+    </ul>
+
+    <h2>Kesimpulan</h2>
+
+    <p>Saba Sport adalah salah satu platform taruhan olahraga terbaik dengan fitur lengkap dan pengalaman pengguna yang mumpuni.</p>
+
+    <p>Namun, penting untuk diingat bahwa taruhan online <strong>ilegal di Indonesia</strong> dan memiliki risiko finansial serta hukum.</p>
+
+    <p>Selalu pertimbangkan dengan bijak sebelum bermain, dan pilih alternatif yang lebih aman jika ingin bertaruh secara legal.</p>
+
+    <footer>
+        <p><strong>#SabaSport #TaruhanOlahraga #SportsBetting</strong></p>
+        <p><em>Disclaimer: Artikel ini hanya untuk tujuan informasi. Kami tidak mendukung perjudian ilegal. Bermainlah dengan tanggung jawab.</em></p>
+
+
+
+        </div>
+    </div>
+        
+    <script>
+        // Chat Popup Script
+        function toggleChat() {
+            const chatPopup = document.getElementById("chatPopup");
+            if (chatPopup.style.display === "block") {
+                chatPopup.style.display = "none";
+            } else {
+                chatPopup.style.display = "block";
+            }
+        }
+        
+        // Close chat when clicking outside
+        window.onclick = function(event) {
+            const chatPopup = document.getElementById("chatPopup");
+            const chatBtn = document.querySelector(".live-chat-btn");
+            if (event.target !== chatPopup && event.target !== chatBtn && !chatPopup.contains(event.target)) {
+                chatPopup.style.display = "none";
+            }
+        }
+        
+        // Make header image responsive
+        window.addEventListener('resize', function() {
+            const header = document.querySelector('.header-container');
+            const image = document.querySelector('.header-image');
+            if (window.innerWidth < 768) {
+                header.style.maxHeight = '300px';
+            } else if (window.innerWidth < 480) {
+                header.style.maxHeight = '200px';
+            } else {
+                header.style.maxHeight = '588px';
+            }
+        });
+    </script>
+</body>
+</html>
